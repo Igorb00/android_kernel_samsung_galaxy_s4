@@ -2,9 +2,26 @@ Max Fu Kernel for Samsung Galaxy S4 Series
 ===================================
 Including GT-I9500, GT-I9502 and SCH-I959
 
-How to compile:
+How to Build:
 -----------------------------------
-To be added
+    - get Toolchain
+        From android git server , codesourcery and etc ..
+            EX) arm-eabi-4.6
+
+    - edit make_kernel.sh
+        edit "TOOLCHAIN" to right toolchain path(You downloaded).
+            EX) TOOLCHAIN= $(android platform directory you download)/android/prebuilt/linux-x86/toolchain/arm-eabi-4.6/bin/arm-eabi-
+            Ex) TOOLCHAIN=/usr/local/toolchain/arm-eabi-4.4.0/bin/arm-eabi-		// check the location of toolchain
+  	
+    - to Build
+        $ ./make_kernel.sh
+
+    - output files
+	- Kernel : arch/arm/boot/zImage
+	- module : drivers/*/*.ko
+
+    - How to Clean	
+        $ make clean
 
 Original readme:
 -----------------------------------
