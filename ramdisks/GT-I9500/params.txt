@@ -1,0 +1,13 @@
+boot:
+
+boot_img_page_size = 2048
+cmdline = 
+kernel_base_addr = 0x10000000
+ramdisk_addr = 0x11000000
+
+recovery:
+
+boot_img_page_size = 2048
+cmdline = 
+kernel_base_addr = 0x10000000
+ramdisk_addr = 0x11000000
